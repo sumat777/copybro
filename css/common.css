@@ -71,3 +71,1365 @@ img {width: 100%;}
 /* header */
 
 /* ... your code here ... */
+
+
+#wrapper_main {
+/*
+В примечаниях будем ставить оригинальные значения, взятые тут: 
+https://www.figma.com/file/NzjhPvxCJMcOgfRfudE4Em?node-id=18%3A0
+*/
+  position: relative;
+  width: 1440px;
+  /* height: 7073px; */
+  /* height: auto; */
+  height: 1900px;
+  background: #FFFFFF; 
+  /*border:3px ridge #999999;*/ /* не было в оригинале, просто для наглядности */
+}
+
+/* 
+Group 2051 
+Это строка в самом вверху, с нее и начнем...
+*/
+
+#group2051 {
+  position: absolute;
+  width: 1272px;
+  height: 40px;
+  left: 84px;
+  top: 32px;
+  /*border:1px ridge #FF99FF;*/
+
+}
+
+/*
+Frame
+В группу group2051 входит: Frame.png
+*/
+
+#group2051_frame {
+  position: absolute;
+  width: 203px;
+  height: 48px;
+  left: 154px;
+  top: -1px;
+  /*border:1px ridge #9999FF;*/
+}
+
+
+
+/* 
+Group 21073 
+Входит в #group2051_frame
+Тут 2 кружка темный и синий
+*/
+
+#group2051_frame_group21073 {
+  position: absolute;
+/*
+Оригингальная версия: 
+Хорошая, но кружки сильно ушли вниз и влево:
+  width: 47.63px;
+  height: 46.45px;
+  left: 0px;
+  top: 0.6px;
+*/
+  width: 47.63px;
+  height: 46.45px;
+  left: 12px;
+  top: -14px;
+  /*border:1px ridge #9999FF;*/
+}
+
+/* 
+Ellipse 18 
+Входит в group2051_frame_group21073
+Кружок синий
+*/
+
+#group2051_frame_group21073_ell18 {
+  position: absolute;
+/*
+Оригингальная версия: 
+  left: 6.4%;
+  right: 79.64%;
+  top: 58.27%;
+  bottom: -17.2%;
+*/
+
+/*
+  left: 6.4%;
+  right: 40%;
+  top: 58.27%;
+  bottom: -17.2%;
+*/
+
+  left: 6%;
+  right: 30%;
+  top: 50%;
+  bottom: -17%;
+  background: linear-gradient(207.6deg, rgba(0, 207, 255, 0.9) 9.71%, rgba(0, 101, 255, 0.9) 100%, rgba(0, 91, 236, 0.9) 100%);
+  transform: matrix(0.26, -0.97, 0.97, 0.26, 0, 0);
+  border-radius:50%;
+  /*border:1px ridge #9999FF; */
+
+}
+
+
+/* 
+Ellipse 19 
+Входит в group2051_frame_group21073
+Кружок темный
+*/
+
+#group2051_frame_group21073_ell19 {
+  position: absolute;
+/*
+Оригинальная версия:
+  left: 0%;
+  right: 86.04%;
+  top: 82.74%;
+  bottom: -41.66%;
+*/
+
+/*
+lgv1
+  left: -20%;
+  right: 66%;
+  top: 82.74%;
+  bottom: -41.66%;
+*/
+
+  left: -30%;
+  right: 66%;
+  top: 82.74%;
+  bottom: -50%;
+  background: linear-gradient(27.14deg, #050B41 -0.52%, #081477 97.77%);
+  transform: matrix(0.26, -0.97, 0.97, 0.26, 0, 0);
+  border-radius:50%;
+}
+
+
+/* 
+Group 
+Входит в group2051_frame
+Текст: 
+CopyBro
+*/
+
+#group2051_frame_text1 {
+  position: absolute;
+  left: 29.79%;
+  right: 3.9%;
+  top: 19.3%;
+  bottom: 16.76%;
+
+/* background: #062B61; */
+  color: #062B61; 
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-size:32px;
+  font-weight:bold;
+}
+
+
+/* 
+Rectangle 3649 
+Входит в group2051
+Кнопка
+Текст: 
+CopyBro
+*/
+
+#group2051_button {
+  position: absolute;
+  left: 77.2%;
+  right: 13.6%;
+  top: 0%;
+  bottom: 0%;
+  background: #0962E8;
+  border-radius: 10px;
+  cursor: pointer;
+  
+  /* description */
+
+/*
+--
+Стили для надписи помещаем прямо в кнопку, т.к. неясно, зачем их выносить в отдельный элемент...
+--
+  position: absolute;
+  left: 78.3%;
+  right: 14.7%;
+  top: 20%;
+  bottom: 20%;
+*/
+  font-family: Euclid Circular A;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+/* or 20px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+/* White */
+  color: #FFFFFF;
+  justify-content: center;
+}
+
+
+/* 
+title 
+Инвестируйте легко и получайте доход 
+Эта надпись прямо в 
+#wrapper_main
+*/
+
+#text2 {
+  position: absolute;
+  width: 470px;
+  height: 114px;
+  left: calc(50% - 470px/2 - 245px);
+  top: 155px;
+  /* H1 */
+  font-family: Euclid Circular A;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 44px;
+  line-height: 130%;
+  /* or 57px */
+  letter-spacing: 0.02em;
+  /*color: #0962E8;*/
+}
+
+#text2_span1 {
+  color: #0962E8;
+}
+
+
+#text2_span2 {
+  color: #47646D;
+}
+
+
+
+/* 
+title 
++51,9% 
+Эта надпись прямо в 
+#wrapper_main
+*/
+
+#text3 {
+  position: absolute;
+  width: 178px;
+  height: 57px;
+  left: calc(50% - 178px/2 - 388px);
+  top: 278px;
+/* H1 */
+  font-family: Euclid Circular A;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 44px;
+  line-height: 130%;
+/* or 57px */
+  letter-spacing: 0.02em;
+  color: #0962E8;
+}
+
+
+/* 
+title 
+годовых
+Эта надпись прямо в 
+#wrapper_main
+*/
+
+
+#text4 {
+  position: absolute;
+  width: 164px;
+  height: 36px;
+  left: calc(50% - 164px/2 - 241px);
+  top: 294px;
+  font-family: Euclid Circular A;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 111%;
+/* identical to box height, or 36px */
+  letter-spacing: 0.02em;
+  color: #47646D;
+}
+
+
+
+/* 
+title 
+*
+Эта надпись прямо в 
+#wrapper_main
+При наведении мышкой всплывает тултип
+*/
+
+#text5 {
+  position: absolute;
+  width: 25px;
+  height: 24px;
+  left: calc(50% - 25px/2 - 172.5px);
+  top: 294px;
+  font-family: Euclid Circular A;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 111%;
+/* or 27px */
+  letter-spacing: 0.02em;
+/* Gray */
+  color: #AEB3BB;
+}
+
+/* 
+description  
+Выбирайте стратегии успешных трейдеров  и копируйте сделки в авторежиме. Зарабатывайте легко и с минимальными рисками через мобильное приложение Сopybro.
+Эта надпись прямо в 
+#wrapper_main
+*/
+
+#descr1 {
+  position: absolute;
+  height: 96px;
+  left: 240px;
+  right: 787px;
+  top: 350px;
+  font-family: Euclid Circular A;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+/* or 24px */
+  letter-spacing: 0.01em;
+  font-feature-settings: 'case' on, 'zero' on;
+  color: #062B61;
+}
+
+/* 
+Group 2041 
+Rectangle 3601
+title
+Установить приложение
+*/
+
+#group2041_button {
+  position: absolute;
+  width: 260px;
+  height: 54px;
+  left: 240px;
+  top: 470px;
+
+/* Rectangle 3601 */
+/* Brand Color */
+  background: #0962E8;
+  border-radius: 10px;
+
+/* title */
+  font-family: Euclid Circular A;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 135%;
+/* or 22px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+/* White */
+  color: #FFFFFF;
+
+  cursor: pointer;
+  justify-content: center;
+}
+
+
+
+
+
+/* 
+Group 21068 
+Кнопка Google Play
+Сделаем просто графическую кнопку...
+google_play_button.png
+*/
+
+#group21068_button {
+  position: absolute;
+  width: 122.71px;
+  height: 37.76px;
+  left: 240px;
+  top: 542px;
+  cursor: pointer;
+}
+
+
+/* 
+Group 21067 
+Кнопка App Store
+Сделаем просто графическую кнопку...
+app_store_button.png
+
+*/
+
+#group21067_button {
+  position: absolute;
+  width: 122.71px;
+  height: 37.76px;
+  left: 377.29px;
+  top: 542px;
+  cursor: pointer;
+}
+
+
+/* Rectangle 240644795 */
+
+#rect240644795 {
+  position: absolute;
+  width: 221.5px;
+  height: 71.5px;
+  left: 509px;
+  top: 323px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  
+/* Общий показатель по среднегодовой доходности стратегий */
+
+  padding: 10px 10px 10px 10px;
+
+  font-family: Euclid Circular A;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 130%;
+  /* or 17px */
+
+  letter-spacing: 0.001em;
+  font-feature-settings: 'case' on, 'zero' on;
+
+  color: #8E949C;
+  
+}
+
+
+
+/* 
+Общий показатель по среднегодовой доходности стратегий 
+Внесен внутрь rect240644795 см выше...
+*/
+
+
+/* 
+Group 21090 
+Обертка группы "Счастливый инвестор"
+*/
+
+#group21090 {
+  position: absolute;
+  width: 580.09px;
+  height: 480px;
+  left: 725px;
+  top: 186px;
+  /*border:1px ridge #FF99FF;*/
+}
+
+/* 
+Ellipse 435 
+*/
+#group21090_el {
+  position: absolute;
+  width: 386px;
+  height: 386px;
+/*
+left: 823px; так в оригинале, но должно быть: 823 - 725 = 98
+top: 212px;  212 - 186 = 26
+*/
+  left: 98px;
+  top: 26px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 56.42%, #FFFFFF 66.22%), #E2F3FF;
+  filter: blur(50px);
+  /*border:1px ridge #9999FF;*/
+}
+
+
+/* 
+business-3d-with-phone-man-close-up-7 1 
+*/
+
+#group21090_bizman {
+  position: absolute;
+  width: 312px;
+  height: 295px;
+/*
+left: 854px; так в оригинале, но должно быть: 854 - 725 = 129
+top: 186px; 186 - 186 = 0
+*/
+  left: 129px;
+  top: 0px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 67.63%, rgba(255, 255, 255, 0.322404) 76.83%, #FFFFFF 100%), no-repeat center url("/images/bizman.png");
+  /*border:1px ridge #9999FF;*/
+}
+
+
+/* 
+Group 2211 
+*/
+#group21090_group2211 {
+  position: absolute;
+  width: 170.09px;
+  height: 196px;
+/*
+left: 931px; 931 - 725
+top: 470px;  470 - 186
+*/
+  left: 206px;
+  top: 284px;
+  background: linear-gradient(180deg, #99E0FE 26.56%, #488ECC 78.65%);
+  opacity: 0.9;
+  backdrop-filter: blur(6px);
+/* Note: backdrop-filter has minimal browser support */
+  border-radius: 20px;
+}
+
+
+/* 
+title 
+от 0,0₽
+*/
+#group21090_group2211_title1 {
+  position: absolute;
+  width: 95px;
+  height: 36px;
+/*
+left: calc(50% - 95px/2 + 281.5px);
+top: 561px;    -470px;
+*/
+  left: calc(50% - 95px/2);
+  top: 91px;
+  font-family: Euclid Circular A;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 130%;
+/* or 31px */
+  letter-spacing: 0.02em;
+/* White */
+  color: #FFFFFF;
+}
+
+/* 
+title 
+Платите комиссию только с прибыли
+*/
+
+#group21090_group2211_title2 {
+  position: absolute;
+  width: 131px;
+  height: 50px;
+/*
+left: calc(50% - 131px/2 + 299.5px);
+top: 599px;      -470px;
+*/
+  left: calc(50% - 131px/2);
+  top: 129px;
+  font-family: Euclid Circular A;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+/* or 21px */
+  font-feature-settings: 'case' on, 'zero' on;
+/* White */
+  color: #FFFFFF;
+}
+
+
+
+#group21090_group2211_pic {
+  position: absolute;
+  width:84px;
+  height:107px;
+  left:20px;
+  top: -30px;
+}
+
+/* 
+Group 2210 
+*/
+#group21090_group2210 {
+  position: absolute;
+  width: 170.09px;
+  height: 195.55px;
+/*
+left: 1135px; - 725
+top: 337px;   - 186
+*/
+  left: 410px;
+  top: 151px;
+  background: linear-gradient(180deg, rgba(151, 186, 219, 0.9) 0%, rgba(6, 43, 97, 0.9) 100%);
+  backdrop-filter: blur(4px);
+/* Note: backdrop-filter has minimal browser support */
+  border-radius: 20px;
+}
+
+
+/* 
+title 
+51,9%
+*/
+#group21090_group2210_title1 {
+  position: absolute;
+  width: 115px;
+  height: 36px;
+/*
+left: calc(50% - 115px/2 + 491.5px);
+top: 428px;  -470px;
+*/
+  left: calc(50% - 115px/2);
+  top: 91px;
+  font-family: Euclid Circular A;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 130%;
+/* or 31px */
+  letter-spacing: 0.02em;
+/* White */
+  color: #FFFFFF;
+}
+
+/* 
+title 
+Средняя годовая доходность
+*/
+#group21090_group2210_title2 {
+  position: absolute;
+  width: 131px;
+  height: 50px;
+/*
+left: calc(50% - 131px/2 + 299.5px);
+top: 599px;      -470px;
+*/
+  left: calc(50% - 131px/2);
+  top: 129px;
+  font-family: Euclid Circular A;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+/* or 21px */
+  font-feature-settings: 'case' on, 'zero' on;
+/* White */
+  color: #FFFFFF;
+}
+
+#group21090_group2210_pic {
+  position: absolute;
+  width:82px;
+  height:112px;
+  left:20px;
+  top: -30px;
+}
+
+/* 
+Group 2209 
+*/
+#group21090_group2209 {
+  position: absolute;
+  width: 170.09px;
+  height: 195.55px;
+/*
+left: 725px;     - 725
+top: 415.32px;   - 186
+*/
+  left: 0px;
+  top: 229px;
+  background: linear-gradient(180deg, #FFE1C5 0%, #FF7A00 65.62%);
+  opacity: 0.8;
+  backdrop-filter: blur(4px);
+/* Note: backdrop-filter has minimal browser support */
+  border-radius: 20px;
+}
+
+
+/* 
+title 
+60 мин
+*/
+#group21090_group2209_title1 {
+  position: absolute;
+  width: 132px;
+  height: 36px;
+/*
+left: calc(50% - 132px/2 + 90px);
+top: 507px;
+*/
+  left: calc(50% - 132px/2);
+  top: 91px;
+  font-family: Euclid Circular A;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 130%;
+/* or 31px */
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+
+/* 
+title 
+Сэкономленного времени в день
+*/
+#group21090_group2209_title2 {
+  position: absolute;
+  width: 148.11px;
+  height: 49.76px;
+/*
+left: calc(50% - 148.11px/2 + 97.57px);
+top: 546.66px;
+*/
+  left: calc(50% - 148.11px/2);
+  top: 129px;
+  font-family: Euclid Circular A;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+/* or 21px */
+  font-feature-settings: 'case' on, 'zero' on;
+  color: #FFFFFF;
+}
+
+
+#group21090_group2209_pic {
+  position: absolute;
+  width:85px;
+  height:118px;
+  left:20px;
+  top: -46px;
+}
+
+/*
+-- 
+Rectangle 240644792 
+--
+Автоследование:  минимальные риски, оптимальная доходность 
+--
+
+*/
+#rect_240644792 {
+  position: absolute;
+  width: 724px;
+  height: 510px;
+  left: 581px;
+  top: 727px;
+  background: #062B61;
+  border-radius: 40px;
+}
+
+/* 
+title 
+Автоследование:  минимальные риски, оптимальная доходность 
+*/
+#rect_240644792_title {
+  position: static;
+  width: 453px;
+  height: 239px;
+  left: calc(50% - 453px/2 - 6.5px);
+  top: 0px;
+/* H1 */
+  font-family: Euclid Circular A;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 44px;
+  line-height: 130%;
+/* or 57px */
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+/* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  /*margin: 12px 0px;*/
+  margin: 50px auto 30px auto;
+  /*padding: 40px 0px 0px 50px;*/
+  /*border:1px ridge #9999FF;*/
+}
+
+/* 
+description 
+Мы собрали для вас лучшие торговые стратегии  с подтвержденными данными по прошлым сделкам  и их доходности.  Трейдер ежедневно следит за динамикой рынка, совершая сделки и балансируя риски и доходность стратегии. 
+*/
+#rect_240644792_desc {
+  position: static;
+  width: 453px; /* не было в оригинале*/
+  height: 144px;
+  left: 0px;
+  right: 23px;
+  top: 251px;
+  font-family: Euclid Circular A;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+/* or 24px */
+  letter-spacing: 0.01em;
+  font-feature-settings: 'case' on, 'zero' on;
+  color: #FFFFFF;
+/* Inside Auto Layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+/* margin: 12px 0px; */
+  margin: 12px auto;
+  /*border:1px ridge #9999FF;*/
+}
+
+
+
+/*
+Срециальный спан для выделения фразы 
+минимальные риски,
+*/
+#rect_240644792_desc_span1 {
+  color: #6AA6FF;
+}
+
+/* 
+Object/Other 13 
+Просто картинка с разными элементами
+other13_inside.png
+*/
+#other_13_pic {
+  position: absolute;
+  width: 379px;
+  height: 379px;
+  left: 301px;
+  top: 764px;
+  /*border:1px ridge #9999FF;*/
+}
+
+/* 
+Hourglass 1 
+Картинка "Песочные часы", повернутые на -35.88deg
+hourglass2.png
+... или ...
+hourglass2_obj
+
+* Должны поддерживаться четкие изображения для retina-экранов
+
+Лучшее решение для иконок и декоративных элементов — использование формата SVG. SVG — векторный формат графики, и он, как и в случае со шрифтами, отлично выглядит на экранах с разным разрешением и плотностью пикселей и не нуждается в дополнительной оптимизации при вёрстке под ретину.
+
+Но тут другая проблема. 
+
+При экспорте из figma.com файлы svg получаются очень большого размера. 
+
+Пример для сравнения: 
+hourglass2.png ~ 33 kb
+hourglass2.svg ~ 2mb
+
+*/
+
+#hourglass2_pic {
+  position: absolute;
+/*
+width: 122.92px;
+height: 155.06px;
+left: 234px;
+top: 1089.03px;
+*/
+  width: 191px;
+  height: 198px;
+  left: 234px;
+  top: 1012px;
+/*
+background: url(.png);
+transform: rotate(-35.88deg);
+*/
+}
+
+#hourglass2_obj {
+  position: absolute;
+/*
+width: 122.92px;
+height: 155.06px;
+left: 234px;
+top: 1089.03px;
+*/
+  width: 191px;
+  height: 198px;
+  left: 234px;
+  top: 1012px;
+/*
+background: url(.png);
+transform: rotate(-35.88deg);
+*/
+}
+
+/* 
+title 
+Стать инвестором просто
+*/
+
+#title1 {
+  position: absolute;
+  width: 456px;
+  height: 114px;
+  left: calc(50% - 456px/2 + 5px);
+  top: 1326px;
+/* H1 */
+  font-family: Euclid Circular A;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 44px;
+  line-height: 130%;
+/* or 57px */
+/*display: flex;*/
+/*display: inline-flex;*/
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #47646D;
+}
+
+
+/*
+title1_span1
+Для выделения надписи: 
+просто
+*/
+#title1_span1 {
+  color: #0962E8;
+}
+
+
+/* 
+Rectangle 3692 
+*/
+#rect_3692 {
+  position: absolute;
+  width: 307px;
+  height: 208px;
+  left: 236px;
+  top: 1491px;
+/* White */
+  background: #FFFFFF;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+}
+
+/* 
+Group 2186 
+*/
+#rect_3692_gr2186 {
+  position: absolute;
+  width: 267px;
+  height: 112px;
+/*
+left: 256px; - 236px;
+top: 1511px; - 1491px;
+*/
+  left: 20px;
+  top: 20px;
+}
+
+/* title */
+#rect_3692_gr2186_title {
+  position: absolute;
+  width: 19px;
+  height: 20px;
+/*
+left: calc(50% - 19px/2 - 441.5px);
+top: 1526px; - 1491px - 20px
+*/
+  left: 12px;
+  top: 15px;
+/* H0 */
+  font-family: Euclid Circular A;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 135%;
+/* or 86px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.02em;
+/* Primary */
+  color: #07152A;
+}
+
+
+/* 
+description 
+Скачайте приложение CopyBro
+*/
+
+#rect_3692_gr2186_descr1 {
+  position: absolute;
+  height: 54px;
+/*
+left: 316px;
+right: 927px;
+top: 1511px;
+*/
+  left: 60px;
+  width: 200px;
+  font-family: Euclid Circular A;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+/* or 27px */
+  letter-spacing: 0.001em;
+  font-feature-settings: 'case' on, 'zero' on;
+/* Brand Color */
+  color: #0962E8;
+}
+
+#rect_3692_gr2186_descr1_span2 {
+  color: #07152A;
+}
+
+
+/* 
+description 
+Приложение бесплатно и доступно для платформ iOS и Android
+*/
+#rect_3692_gr2186_descr2 {
+  position: absolute;
+  height: 42px;
+/*
+left: 256px;
+right: 917px;
+top: 1581px;
+*/
+  bottom: 0px;
+  font-family: Euclid Circular A;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+/* or 21px */
+  letter-spacing: 0.001em;
+  font-feature-settings: 'case' on, 'zero' on;
+  color: #66778F;
+}
+
+
+/* 
+Rectangle 3692_2
+Это выдуманный элемент, чтобы сохранить единство стилей с 
+элементом 1, у которого есть  
+Rectangle 3692
+*/
+#rect_3692_2 {
+  position: absolute;
+  width: 307px;
+  height: 208px;
+  left: 581px;
+  top: 1491px;
+/* White */
+  background: #FFFFFF;
+/*
+box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+border-radius: 16px;
+*/
+}
+
+
+/* 
+Group 2187 
+Это клон от 2186
+*/
+#rect_3692_2_gr2187 {
+  position: absolute;
+  width: 279px;
+  height: 153px;
+/*
+left: 581px;
+top: 1511px;
+*/
+  left: 20px;
+  top: 20px;
+}
+
+
+
+/* title */
+#rect_3692_2_gr2187_title {
+  position: absolute;
+  width: 24px;
+  height: 20px;
+/*
+left: calc(50% - 24px/2 - 115px);
+top: 1526px;
+*/
+  left: 12px;
+  top: 15px;
+/* H0 */
+  font-family: Euclid Circular A;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 135%;
+/* or 86px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.02em;
+/* Primary */
+  color: #07152A;
+}
+
+/* 
+description 
+Откройте брокерский счет онлайн
+*/
+#rect_3692_2_gr2187_descr1 {
+  position: absolute;
+  height: 54px;
+/*
+left: 641px;
+right: 580px;
+top: 1511px;
+*/
+  left: 60px;
+  width: 200px;
+  font-family: Euclid Circular A;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+/* or 27px */
+  letter-spacing: 0.001em;
+  font-feature-settings: 'case' on, 'zero' on;
+/* Brand Color */
+  color: #0962E8;
+}
+
+#rect_3692_2_gr2187_descr1_span2 {
+  color: #07152A;
+}
+
+
+
+/* 
+description 
+Открытие счета - обязательная процедура,  фактически это личный кошелек для хранения средств и ценных бумаг.
+*/
+#rect_3692_2_gr2187_descr2 {
+  position: absolute;
+  height: 83px;
+/*
+left: 581px;
+right: 597px;
+top: 1581px;
+*/
+  bottom: 0px;
+  font-family: Euclid Circular A;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+/* or 21px */
+  letter-spacing: 0.001em;
+  font-feature-settings: 'case' on, 'zero' on;
+  color: #66778F;
+}
+
+/* 
+Rectangle 3692_3
+Это выдуманный элемент, чтобы сохранить единство стилей с 
+элементами 1 и 2
+*/
+
+#rect_3692_3 {
+  position: absolute;
+  width: 307px;
+  height: 208px;
+/*
+left: 581px;
+*/
+  top: 1491px;
+  left: 920px;
+/* White */
+  background: #FFFFFF;
+/*
+box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+border-radius: 16px;
+*/
+}
+
+/* 
+Group 2188 
+Это клон от 2187 и 2186
+*/
+
+#rect_3692_3_gr2188 {
+  position: absolute;
+  width: 277px;
+  height: 170px;
+/*
+left: 920px;
+top: 1511px;
+*/
+  left: 20px;
+  top: 20px;
+}
+
+/* 
+title 
+*/
+#rect_3692_3_gr2188_title {
+  position: absolute;
+  width: 24px;
+  height: 20px;
+/*
+left: calc(50% - 24px/2 + 223px);
+top: 1526px;
+*/
+  left: 12px;
+  top: 15px;
+/* H0 */
+  font-family: Euclid Circular A;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 135%;
+/* or 86px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.02em;
+/* Primary */
+  color: #07152A;
+}
+
+
+
+/* 
+description 
+Выберите стратегии  для автоследования
+*/
+#rect_3692_3_gr2188_descr1 {
+  position: absolute;
+  height: 54px;
+/*
+left: 980px;
+right: 243px;
+top: 1511px;
+*/
+  left: 60px;
+  width: 200px;
+  font-family: Euclid Circular A;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+/* or 27px */
+  letter-spacing: 0.001em;
+  font-feature-settings: 'case' on, 'zero' on;
+/* Brand Color */
+  color: #0962E8;
+}
+
+#rect_3692_3_gr2188_descr1_span2 {
+  color: #07152A;
+}
+
+
+
+/* 
+description 
+Подписавшись на стратегию,  вы активируете услугу “Автоследование”, все ваши сделки будут дублироваться  с трейдерскими! 
+*/
+#rect_3692_3_gr2188_descr2 {
+  position: absolute;
+  height: 100px;
+/*
+left: 920px;
+right: 261px;
+top: 1581px;
+*/
+
+  bottom: 0px;
+  font-family: Euclid Circular A;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+/* or 21px */
+  letter-spacing: 0.001em;
+  font-feature-settings: 'case' on, 'zero' on;
+  color: #66778F;
+}
+
+/* 
+Group 21141 
+Установить приложение
+По аналогии с: 
+group2041_button
+*/
+#group21141_button {
+  position: absolute;
+  width: 260px;
+  height: 54px;
+  left: 590px;
+  top: 1745px;
+/* title */
+/*
+position: absolute;
+left: 6.09%;
+right: 8.12%;
+top: 31.48%;
+bottom: 33.33%;
+*/
+  font-family: Euclid Circular A;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 135%;
+/* or 22px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+/* White */
+  color: #FFFFFF;
+/* Rectangle 3601 */
+/* Brand Color */
+  background: #0962E8;
+  border-radius: 10px;
+  cursor: pointer;
+  justify-content: center;
+}
+
+
+/*
+Ниже стили общего характера...
+*/
+
+.vis_off {
+  visibility: hidden;
+  display: none;
+}
+
+
+
+
+/*
+
+This is enda...
+of this file
+
+*/

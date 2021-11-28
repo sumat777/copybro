@@ -111,6 +111,12 @@ class HTML {
 			$params['resource_timestamp'] = filemtime($resource_name);
 			$return = is_file($resource_name);
         }
+/*
+		echo '<pre><br />';
+		echo 'params[resource_name]<br />';
+		var_dump($params['resource_name']);
+		echo '</pre><br />';
+*/
         if (!$return) trigger_error('unable to read resource: "'.$params['resource_name'].'"');
         return $return;
     }

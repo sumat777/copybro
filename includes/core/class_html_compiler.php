@@ -67,7 +67,7 @@ class HTML_Compiler extends HTML {
         }
         $compiled_content .= $text_blocks[$i];
 		// file end
-        if (($_len = strlen($compiled_content)) && ($compiled_content{$_len - 1} == "\n" )) {
+        if (($_len = strlen($compiled_content)) && ($compiled_content[$_len - 1] == "\n" )) {
             $compiled_content = substr($compiled_content, 0, -1);
         }
 		// output
@@ -78,7 +78,7 @@ class HTML_Compiler extends HTML {
 		// vars
         preg_match('/^(?:('.$this->var_regexp.'|\/?'.$this->func_regexp.'))(?:\s+(.*))?$/xs', $tag, $match);
         $command = $match[1];
-        $args = isset($match[2]) ? $match[2] : null;
+        $args = $match[2] ?? null;
 		// type
         if (preg_match('!^'.$this->var_regexp.'$!', $command)) return "<?php echo ".$this->parse_var_props($command)."; ?>\n";
 		else if (preg_match('/^LANG_[a-z0-9_]+$/i', $command)) return "<?php echo self::\$_langs['".$command."']; ?>\n";
@@ -115,28 +115,28 @@ class HTML_Compiler extends HTML {
 
     private function parse_var($var_expr) {
 		// handling
-		$var_ref = is_numeric($var_expr{0}) ? $var_expr : substr($var_expr, 1);
+		$var_ref = is_numeric($var_expr[0]) ? $var_expr : substr($var_expr, 1);
 		preg_match_all('!(?:^\w+)|(?:'.$this->var_bracket_regexp.')|\.\$?\w+|\S+!', $var_ref, $match);
 		$indexes = $match[0];
 		$var_name = array_shift($indexes);
 		$output = ($var_name == 'ref') ? $this->compile_ref($indexes) : "self::\$_tpl_vars['$var_name']";
 		// inner vars
 		foreach ($indexes as $index) {
-			if ($index{0} == '[') {
+			if ($index[0] == '[') {
 				$index = substr($index, 1, -1);
 				if (is_numeric($index)) {
 					$output .= "[$index]";
-				} elseif ($index{0} == '$') {
+				} elseif ($index[0] == '$') {
 					if (strpos($index, '.') !== false) $output .= '['.$this->parse_var($index).']';
 					else $output .= "[self::\$_tpl_vars['".substr($index, 1)."']]";
 				} else {
 					$var_parts = explode('.', $index);
 					$var_section = $var_parts[0];
-					$var_section_prop = isset($var_parts[1]) ? $var_parts[1] : 'index';
+					$var_section_prop = $var_parts[1] ?? 'index';
 					$output .= "[self::\$_sections['$var_section']['$var_section_prop']]";
 				}
-			} else if ($index{0} == '.') {
-				if ($index{1} == '$') $output .= "[self::\$_tpl_vars['".substr($index, 2)."']]";
+			} else if ($index[0] == '.') {
+				if ($index[1] == '$') $output .= "[self::\$_tpl_vars['".substr($index, 2)."']]";
 				else $output .= "['".substr($index, 1)."']";
 			} else {
 				$output .= $index;
@@ -162,13 +162,11 @@ class HTML_Compiler extends HTML {
                         $state = 1;
                     } else $this->syntax_error("invalid attribute name: '".$token."'", E_USER_ERROR, __FILE__, __LINE__);
                     break;
-
                 case 1:
                     if ($token == '=') {
                         $state = 2;
                     } else $this->syntax_error("expecting '=' after attribute name '".$token."'", E_USER_ERROR, __FILE__, __LINE__);
                     break;
-
                 case 2:
                     if ($token != '=') {
                         if (preg_match('!^(on|yes|true)$!', $token)) $token = 'true';
