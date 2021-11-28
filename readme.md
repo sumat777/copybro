@@ -1,49 +1,79 @@
 ### Тестовое задание - отчет о выполнении AV 20211128
+
 Код загружен сюда: 
+
 https://github.com/sumat777/copybro
+
 Имеется 2 ветки (branch)
+
 стартовое состояние: master 
+
 результат тестового задания: done 
 
 ### Среда выполнения
 
 httpd -v
+
 Server version: Apache/2.4.51 (Win64)
+
 Apache Lounge VS16 Server built:   Oct  7 2021 16:27:02
 
+
 PHP --version
+
 PHP 8.0.12 (cli) (built: Oct 19 2021 11:21:05) ( ZTS Visual C++ 2019 x64 )
+
 Copyright (c) The PHP Group
+
 Zend Engine v4.0.12, Copyright (c) Zend Technologies
 
+
 Сервер баз данных
+
 Сервер: localhost via TCP/IP
+
 Тип сервера: MariaDB
+
 Соединение сервера: SSL не используется Документация
+
 Версия сервера: 10.4.12-MariaDB - mariadb.org binary distribution
+
 Версия протокола: 10
+
 Пользователь: root@localhost
+
 Кодировка сервера: UTF-8 Unicode (utf8)
 
+
 VERSION()
+
 10.4.12-MariaDB
+
 
 ### 1 API
 
 Предварительно следует: 
+
 Обновить БД: copybro-test.sql.zip (там новые данные для теста, также немного изменена структура)
+
 Загрузить в postman обновленную коллекцию: collection.json
 
+
 Все методы использует один и тот же ЕндПоинт: 
+
 http://copybro.localhost/api/
 
+
 В Хидере есть новый KEY apiname. 
+
 По данному ключу ЕндПоинт различает запросы. 
+
 Возможные варианты значения этого ключа: 
-user.get
-user.update
-notifications.get
-notifications.read
+
+* user.get
+* user.update
+* notifications.get
+* notifications.read
 
 ### 2 дизайн из figma
 
@@ -53,16 +83,23 @@ http://copybro.localhost/
 Сделана только версия для настольных компьютеров. 
 
 Имеется функция распознования, с какого дивайса пришел юзер, и в зависимости рисовать разные решения. 
+
 См файл: 
+
 /js/common.js
+
 what_device: function()
 
 Те девайсы, которые есть у меня распознал корректно. 
 
 retina-экраны 
+
 Здесь попробовал использование вместо: 
+
 hourglass2.png
+
 Использовать: 
+
 hourglass2.svg
 
 Не уверен, что это правильное решение. 
@@ -73,20 +110,30 @@ hourglass2.svg
 К тому же у меня нет retina-экранов. Протестировал имитаторами, вроде ок все смотрится. 
 
 * плавную анимацию появления блоков
+
 Это сделано, но с использованием библиотеки jQuery, которая подгружается с внешнего ресурса: 
+
 js.inumo.ru
+
 Не уверен, что в задании можно использовать jQuery, но вроде как запрета не увидел, поэтому рискнул использовать. 
+
 
 ### Валидация кода 
 
 Не видно явных ошибок PHP и JS, но если проверить валидность кода HTML тут: 
+
 validator.w3.org/nu/
+
 То есть немного ошибок, в основном по причине использования: 
+
 DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
+
 
 ### Окончание отчета
 
+
 Ниже само тестовое задание, как оно есть:
+
 ###
 ### Тестовое задание
 
