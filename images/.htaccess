@@ -1,0 +1,6 @@
+Options -ExecCGI -Indexes
+AddType text/plain php,php3,php4,php5,php6,phtml,phps,pl,asp,aspx,cgi,dll,exe,ico,shtm,shtml,fcg,fcgi,fpl,asmx,pht,jsp,js,htm,html,wml
+php_value engine off
+<FilesMatch "\.(html|php|js)$"> 
+Deny from all 
+</FilesMatch>

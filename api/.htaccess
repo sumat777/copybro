@@ -1,0 +1,8 @@
+DirectoryIndex index.php
+RewriteEngine On
+RewriteBase /api/
+Options -ExecCGI -Indexes -Includes +FollowSymlinks
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /api/index.php [L]
